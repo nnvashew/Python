@@ -1,5 +1,11 @@
-n = int(input())
-if n%4==0 and n%100!=0 or n%400==0:
-    print('YES')
-else:
-    print('NO')
+a = int(input())
+b = int(input())
+c = int(input())
+if b < a:
+    a, b = b, a
+if b > c:
+    b, c = c, b
+if a > c:
+    a, c = c, a
+
+print(a, b, c)
